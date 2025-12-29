@@ -3,7 +3,7 @@
 Welcome to my professional portfolio! I am an Electronics & Communication Engineer and a passionate Front-End Developer specializing in building responsive, interactive, and high-performance web applications.
 
 ## 🚀 Live Demo
-**Check out the live site here:** (https://mahetabhafez.github.io/)
+**Check out the live site here:** (https://mahetabhafez.github.io/portfolio-/)
 
 ## 🛠️ Technical Skills
 * **Languages:** HTML5, CSS3
