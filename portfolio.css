@@ -47,7 +47,6 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    /* Linier gradient 3shan el-kalam y-ban 3la el-sora */
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('background-img.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,39 +70,29 @@ section {
     font-weight: 600;
 }
 
-.main h3 {
-    color: black;
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
 .main-btn {
     color: whitesmoke;
     background-color: blue;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
-    display: inline-block;
     padding: 0.9em 2em;
-    letter-spacing: 1px;
     border-radius: 15px;
+    display: inline-block;
     margin-bottom: 20px;
     transition: 0.7s ease;
 }
 
 .main-btn:hover {
     background-color: #0d329a;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .social-icons a {
     color: aliceblue;
     font-size: 1.7em;
     padding-right: 20px;
-    display: inline-block; /* Essential for transform */
+    display: inline-block;
     transition: 0.3s ease;
 }
 
@@ -117,13 +106,12 @@ section {
     font-weight: 700;
     text-align: center;
     color: #3a6cf4;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .content {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -131,109 +119,61 @@ section {
     background-color: white;
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
-    letter-spacing: 1px;
     border-radius: 15px;
     padding: 20px;
     margin: 15px;
-    cursor: pointer;
     transition: 0.7s ease;
 }
 
-.card:hover {
-    transform: scale(1.1);
-}
+.card:hover { transform: scale(1.05); }
 
-.icon {
-    color: #3a6cf4;
-    font-size: 7em;
+.icon { color: #3a6cf4; font-size: 7em; text-align: center; }
+
+.info { text-align: center; }
+.info h3 { color: #3a6cf4; font-size: 1.2em; margin: 10px; }
+
+/* --- Skills Section --- */
+.skills { background-color: #000016; color: white; }
+
+.skill-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    width: 160px;
     text-align: center;
+    border-radius: 15px;
+    margin: 15px;
+    border: 1px solid rgba(58, 108, 244, 0.2);
+    transition: 0.5s ease;
 }
 
-.info {
-    text-align: center;
+.skill-item i { font-size: 3.5em; margin-bottom: 10px; display: block; }
+.skill-item:hover {
+    transform: translateY(-10px);
+    border-color: #3a6cf4;
+    background-color: rgba(58, 108, 244, 0.1);
 }
 
-.info h3 {
-    color: #3a6cf4;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
-}
-
-/* --- Fix for long email text --- */
-.info p {
-    word-break: break-all; 
-    overflow-wrap: break-word;
-}
-
-.info a {
-    text-decoration: none;
-    color: #000;
-    transition: 0.3s;
-}
-
-.info a:hover {
-    color: #3a6cf4;
-}
-
-.Projects {
-    background-color: #000016;
-}
-
-.Projects .content {
-    margin-top: 30px;
-}
+/* --- Projects Section --- */
+.Projects { background-color: #000016; }
 
 .project-card {
     background-color: #fff;
-    border: 1px solid #fff;
-    min-height: 14em;
     width: 23em;
-    overflow: hidden;
     border-radius: 10px;
     margin: 20px;
+    overflow: hidden;
     transition: 0.7s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.1); /* Reduced scale slightly for better fit */
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(58, 108, 244, 0.3);
 }
 
-.project-img img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-info {
-    padding: 1em;
-}
-
-.project-category {
-    font-size: 0.8em;
-    color: #000;
-}
-
-.project-tittle {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-
-.more-details {
-    text-decoration: none;
-    color: #3a6cf4;
-}
-
-.more-details:hover {
-    color: #601cfc;
-}
-
-.contact .icon {
-    font-size: 4.5em;
-}
+.project-img img { width: 100%; height: 200px; object-fit: cover; }
+.project-info { padding: 1em; }
+.project-tittle { display: flex; justify-content: space-between; margin-top: 10px; }
+.more-details { text-decoration: none; color: #3a6cf4; font-weight: 800; }
 
 .footer {
     background-color: #000016;
@@ -244,66 +184,10 @@ section {
     align-items: center;
 }
 
-.footer-tittle {
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.footer-tittle span {
-    color: #3a6cf4;
-}
-
-.footer .social-icons a {
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
-    color: #fff;
-}
-
-/* --- Responsive Design --- */
+/* --- Responsive --- */
 @media (max-width: 768px) {
-    header {
-        padding: 10px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-bottom: 15px;
-    }
-
-    .navigation {
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .navigation a {
-        font-size: 1em;
-        padding-left: 0;
-        padding-right: 15px;
-        margin-top: 5px;
-    }
-
-    section {
-        padding: 80px 20px;
-    }
-
-    .main {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-
-    .card, .project-card {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5em 20px;
-    }
+    header { padding: 10px 20px; flex-direction: column; }
+    .navigation { margin-top: 10px; }
+    .navigation a { padding: 0 10px; font-size: 0.9em; }
+    .skill-item { width: 130px; }
 }
