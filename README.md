@@ -6,7 +6,7 @@ Welcome to my professional portfolio! I am an Electronics & Communication Engine
 **Check out the live site here:** (https://mahetabhafez.github.io/portfolio-/)
 
 ## 🛠️ Technical Skills
-* **Languages:** HTML5, CSS3
+* **Languages:** HTML5, CSS3,js
 * **Styling:** CSS Grid, Flexbox, Responsive Design, Animations
 * **Core Skills:** DOM Manipulation, REST API Integration, Asynchronous Programming (Promises/Fetch)
 * **Tools:** Git, GitHub, VS Code
